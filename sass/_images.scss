@@ -40,3 +40,52 @@
   @include font-size($figure-caption-font-size);
   color: $figure-caption-color;
 }
+
+
+.custom-logo{ max-width: 100%; height: auto; }
+
+.parallax {
+  height: 90vh; 
+  //Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+[class*=bg-img-sec-]{
+  background-repeat: no-repeat;
+}
+
+@include media-breakpoint-up(md){
+  .bg-img-sec-1st { 
+    background-image: url('../assets/img/energy.svg'); 
+    background-position: 88vw;
+  }
+
+  .bg-img-sec-2st { 
+    background-image: url('../assets/img/energy.svg'); 
+    background-position: -280px;
+  } 
+}
+
+.bg-img-sec-3st { 
+  background-image: url('../assets/img/energy_light.svg'); 
+  background-position: center; 
+  background-size: contain;
+  @include media-breakpoint-up(md){
+    background-size: auto;
+    background-position: -50px;
+  }
+} 
+
+
+img {
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
+  user-drag: none; 
+  
+}
+

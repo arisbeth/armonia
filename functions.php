@@ -11,7 +11,7 @@
 // Define PATHS to directory Javascript and css ///////////////////////////
 
 define( 'JSPATH', get_template_directory_uri() . '/js/' );
-define( 'CSSPATH', get_template_directory_uri() . '/css/' );
+define( 'CSSPATH', get_template_directory_uri() . '/stylesheets/' );
 define( 'THEMEPATH', get_template_directory_uri() . '/' );
 define( 'SITEURL', site_url('/') );
 

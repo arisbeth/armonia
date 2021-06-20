@@ -57,24 +57,29 @@
 			<div class="navbar-brand col-8 col-md-3 col-lg-2" href="#"><?php
 			the_custom_logo(); ?></div>
 
+			<?php if ( is_page('book') ){?>
+				<!-- No options avalible -->
+			<?php }else{ ?>
+
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 			<div class="col collapse navbar-collapse" id="navbarNav">
 				<div class="w-100 text-center text-lg-right">
-			<?php if ( is_page('about') ){?>
-				<a href="<?php echo SITEURL?>/about" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 bold text-body">
-					Harmonic Egg
-					<svg class="d-block m-auto" width="40" height="4" viewBox="0 0 40 4"><rect width="40" height="4" rx="2" fill="#00a9ad"/></svg>
-				</a>
-			<?php }else{ ?>
-				<a href="<?php echo SITEURL?>/about" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Harmonic Egg</a>
+					<?php if ( is_page('about') ){?>
+						<a href="<?php echo SITEURL?>/about" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 bold text-body">
+							Harmonic Egg
+							<svg class="d-block m-auto" width="40" height="4" viewBox="0 0 40 4"><rect width="40" height="4" rx="2" fill="#00a9ad"/></svg>
+						</a>
+					<?php }else{ ?>
+						<a href="<?php echo SITEURL?>/about" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Harmonic Egg</a>
+					<?php } ?>
+					<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">E-Shop</a>
+					<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Book Now</a>
+					<a class="d-block d-lg-inline-block py-3 py-lg-1 px-4 btn btn-primary semibold">Book now</a>
+				</div>
+
 			<?php } ?>
-				<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">E-Shop</a>
-				<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Book Now</a>
-				<a class="d-block d-lg-inline-block py-3 py-lg-1 px-4 btn btn-primary semibold">Book now</a>
-			</div>
 		</nav>
 
 	<!-- 	<nav id="site-navigation" class="main-navigation">

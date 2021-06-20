@@ -10,7 +10,7 @@
 ?>
 
 <section class="bg-img-sec-2st">
-		<div class="container pt-5">
+		<div class="container">
 			<div class="row text-center py-5 position-relative">
 				<div class="col-12 mb-4">
 					<h2 class="h1 big mb-3"><img class="d-block mx-auto mx-md-0 ml-md-n5 mr-md-4 d-md-inline" src="<?php echo THEMEPATH; ?>assets/img/about_icon_sm.svg">Book now a session</h2>

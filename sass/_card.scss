@@ -313,6 +313,10 @@
 		right: 1rem;
 		bottom: 1rem;
 		left: 1rem;
+		
+		&:hover {
+			svg *{ fill: #fff;}
+		}
 	}
 
 }

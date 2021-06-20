@@ -292,6 +292,9 @@
 .card-booking{
 	border: 2px solid rgba(#fff, .0);
 	transition: all .3s ease-in-out;
+
+	@extend .p-3, .mb-5, .h-100, .position-relative;
+
 	&.is-session{
 		border-radius: 10px;
 		border: 2px solid $primary;
@@ -302,6 +305,14 @@
 	}
 	&:hover{
 		box-shadow: 0 10px 10px rgba(#000000, .16);
+	}
+
+	> a.btn{
+		width: calc( 100% - 1rem*2);
+		position: absolute;
+		right: 1rem;
+		bottom: 1rem;
+		left: 1rem;
 	}
 
 }

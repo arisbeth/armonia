@@ -40,7 +40,7 @@ get_header();
 						<p class="bold kearning-3 mb-3 text-uppercase">What is it</p>
 						<h1 class="main mb-4">Harmonic Egg?</h1>
 						<p class="mb-5">The Harmonic Egg is a wooden chamber designed to create an environment for deep relaxation and internal balance. As energy vibration builds within the chamber, it connects with the participant’s autonomic nervous system to allow the natural healing of mind, body, and spirit.</p>
-						<a class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-6"><span class="lead semibold">Book now</span></a>
+						<a href="<?php echo SITEURL?>/book" class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-6 mb-4"><span class="lead semibold">Book now</span></a>
 					</div>
 				</div>
 				<div class="col-12 col-md-6">

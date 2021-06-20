@@ -1,0 +1,57 @@
+//
+// Custom WP plugins Styles
+//
+
+
+// Newsletter
+
+.tnp-subscription {
+
+  position: relative;
+  margin: 0 !important;
+  max-width: none !important;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  label {
+    display: none !important;
+  }
+
+  input[type=email]{
+    font-weight: $font-weight-medium !important;
+    background-color: #fff !important;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color: $secondary !important;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: $secondary !important;
+  }
+
+  ::placeholder {
+    color: $secondary !important;
+  }
+
+  .tnp-field-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .tnp-field input[type="submit"] {
+    right: 0;
+    width: 50px;
+    background: $primary;
+    
+    border-radius: $border-radius-lg;
+  }
+
+  div.tnp-field{
+    margin-bottom: 0 !important;
+  }
+
+  /*.tnp-field input[type="submit"]*/
+
+}

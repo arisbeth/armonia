@@ -12030,3 +12030,46 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: rgba(166, 170, 198, 0.5);
   }
 }
+/* line 8, ../sass/_plugins.scss */
+.tnp-subscription {
+  position: relative;
+  margin: 0 !important;
+  max-width: none !important;
+  /*.tnp-field input[type="submit"]*/
+}
+/* line 14, ../sass/_plugins.scss */
+.tnp-subscription label {
+  display: none !important;
+}
+/* line 18, ../sass/_plugins.scss */
+.tnp-subscription input[type=email] {
+  font-weight: 500 !important;
+}
+/* line 22, ../sass/_plugins.scss */
+.tnp-subscription ::-webkit-input-placeholder {
+  /* Edge */
+  color: #A6AAC6 !important;
+}
+/* line 26, ../sass/_plugins.scss */
+.tnp-subscription :-ms-input-placeholder {
+  /* Internet Explorer */
+  color: #A6AAC6 !important;
+}
+/* line 30, ../sass/_plugins.scss */
+.tnp-subscription ::placeholder {
+  color: #A6AAC6 !important;
+}
+/* line 34, ../sass/_plugins.scss */
+.tnp-subscription .tnp-field-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 40, ../sass/_plugins.scss */
+.tnp-subscription .tnp-field input[type="submit"] {
+  right: 0;
+  width: 50px;
+  background: red;
+  border: solid 1rem #fff;
+  border-radius: 0.3rem;
+}

@@ -79,6 +79,12 @@
   }
 } 
 
+.bg-img-sec-4st { 
+  background-image: url('../assets/img/life_center.svg'); 
+  background-position: center; 
+  background-size: cover;
+} 
+
 
 img {
   -webkit-user-drag: none; 
@@ -87,5 +93,10 @@ img {
   -o-user-drag: none; 
   user-drag: none; 
   
+}
+
+.figure-img-deco {
+  position: absolute;
+  right: 0; bottom: 0;
 }
 

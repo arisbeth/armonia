@@ -112,6 +112,13 @@
   // For always expanded or extra full navbars, ensure content aligns itself
   // properly vertically. Can be easily overridden with flex utilities.
   align-items: center;
+
+  a { 
+    text-decoration: none;
+    transition: all .3s ease;
+    &:hover { opacity: .80 ;}
+  }
+
 }
 
 // Button for toggling the navbar when in its collapsed state

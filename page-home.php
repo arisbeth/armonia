@@ -31,7 +31,6 @@ get_header();
 		
 		?>
 
-
 <!-- Hero Image Punchline -->
 		<div class="parallax" style="background-image: url('<?php echo $imgDestacada; ?>');">
 			<div class="container h-100">
@@ -40,7 +39,7 @@ get_header();
 						<div class="pb-5 pb-lg-0">
 							<h1 class="text-white biggest mb-4">Advanced Energy Healing</h1>
 							<p  class="text-white medium text-lg-right pr-lg-5 mb-4">A unique, patented chamber created to promote mental, emotional, physical, and spiritual healing and wellness.</p>
-							<a class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-8">
+							<a href="<?php echo SITEURL?>/book" class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-8">
 								<span class="lead semibold">Book now</span>
 								<svg class="align-top ml-3" xmlns="http://www.w3.org/2000/svg" width="28.305" height="27.288" viewBox="0 0 28.305 27.288"><path d="M3.564,22.379l19.5-8.357a1.118,1.118,0,0,0,0-2.056L3.564,3.61A1.109,1.109,0,0,0,2.011,4.627L2,9.777a1.111,1.111,0,0,0,.972,1.106l15.786,2.112-15.786,2.1A1.13,1.13,0,0,0,2,16.212l.011,5.15A1.109,1.109,0,0,0,3.564,22.379Z" transform="translate(-3.49 8.825) rotate(-30)" fill="#fff"/></svg>
 							</a>
@@ -51,7 +50,7 @@ get_header();
 		</div>
 <!-- /Hero Image Punchline-->
 
-<!-- Descrioption -->
+<!-- Description -->
 		<section class="bg-img-sec-1st">
 			<div class="container">
 				<div class="row py-5">
@@ -63,7 +62,7 @@ get_header();
 							<p class="bold kearning-3 mb-3 text-uppercase">What is </p>
 							<h2 class="h1 big mb-3">Harmonic Egg</h2>
 							<p class="mb-3">The Harmonic Egg is a unique, patented chamber created to promote mental, emotional, physical, and spiritual healing and wellness.</p>
-							<a class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-8"><span class="lead semibold">Book now</span></a>
+							<a href="<?php echo SITEURL?>/book" class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-8"><span class="lead semibold">Book now</span></a>
 						</div>
 					</div>
 				</div>
@@ -81,8 +80,8 @@ get_header();
 							<p class="bold kearning-3 mb-3 text-uppercase">Harmonic Egg</p>
 							<h2 class="h1 big mb-3">How it works with your body?</h2>
 							<p class="mb-3">The Harmonic Egg is a unique, patented chamber created to promote mental, emotional, physical, and spiritual healing and wellness.</p>
-							<a class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-8"><span class="lead semibold">Book now</span></a>
-							<p class="pt-5 medium">See more <a href="">Harmonic Egg</a></p>
+							<a href="<?php echo SITEURL?>/book" class="d-inline-block btn btn-primary px-4 py-2 semibold w-100 col-lg-8"><span class="lead semibold">Book now</span></a>
+							<p class="pt-5 medium">See more <a href="<?php echo SITEURL; ?>about">Harmonic Egg</a></p>
 						</div>
 					</div>
 					<div class="col-12 col-md-6 d-none d-sm-block">
@@ -91,7 +90,7 @@ get_header();
 				</div>
 			</div>
 		</section>
-<!-- /Descrioption -->
+<!-- /Description -->
 
 <!-- Benefits -->
 		<section>
@@ -128,21 +127,7 @@ get_header();
 <!-- /Benefits -->
 
 <!-- Newsletter -->
-		<section class="bg-img-sec-3st bg-primary">
-			<div class="container py-5">
-				<div class="row">
-					<div class="col">
-						<h4 class="h1 biggest text-white">Suscribe to our Newsletter</h4>
-						<p class="text-white">Recibe en tu correo las últimas actualizaciones y promociones de parte de Armonia</p>
-					</div>
-					<div class="col d-flex">
-						<img class="ml-auto align-self-end d-none d-md-block" src="<?php echo THEMEPATH; ?>assets/img/dot_grid_light.png">
-					</div>
-				</div>
-			</div>
-		</section>
-
-<!-- /Newsletter -->
+	<?php get_template_part('template-parts/newsletter'); ?>
 
 	</main><!-- #main -->
 

@@ -22,8 +22,7 @@
 
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -64,12 +63,17 @@
 
 			<div class="col collapse navbar-collapse" id="navbarNav">
 				<div class="w-100 text-center text-lg-right">
-					<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Harmonic Egg</a>
-					<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">E-Shop</a>
-					<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Book Now</a>
-					<a class="d-block d-lg-inline-block py-3 py-lg-1 px-4 btn btn-primary semibold">Book now</a>
-				</div>
-			
+			<?php if ( is_page('about') ){?>
+				<a href="<?php echo SITEURL?>/about" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 bold text-body">
+					Harmonic Egg
+					<svg class="d-block m-auto" width="40" height="4" viewBox="0 0 40 4"><rect width="40" height="4" rx="2" fill="#00a9ad"/></svg>
+				</a>
+			<?php }else{ ?>
+				<a href="<?php echo SITEURL?>/about" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Harmonic Egg</a>
+			<?php } ?>
+				<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">E-Shop</a>
+				<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Book Now</a>
+				<a class="d-block d-lg-inline-block py-3 py-lg-1 px-4 btn btn-primary semibold">Book now</a>
 			</div>
 		</nav>
 

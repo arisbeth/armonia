@@ -1,0 +1,83 @@
+//
+// Custom WP plugins Styles
+//
+
+
+// Newsletter
+
+.tnp-subscription {
+
+  position: relative;
+  margin: 0 !important;
+  max-width: none !important;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  label {
+    display: none !important;
+  }
+
+  input[type=email]{
+    font-weight: $font-weight-medium !important;
+    background-color: #fff !important;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color: $secondary !important;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: $secondary !important;
+  }
+
+  ::placeholder {
+    color: $secondary !important;
+  }
+
+  .tnp-field-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .tnp-field input[type="submit"] {
+    right: 0;
+    width: 50px;
+    background: $primary;
+    
+    border-radius: $border-radius-lg;
+  }
+
+  div.tnp-field{
+    margin-bottom: 0 !important;
+  }
+
+  /*.tnp-field input[type="submit"]*/
+
+}
+
+
+// Appointment Booking Calendar
+
+.abc_selectdate.fields { display: none;}
+
+#cp_abcform_pform{
+  @extend .row;
+  #calarea_1{
+    @extend .col-12, .col-lg-8;
+  }
+  .custom-form-appointment {
+    @extend .col-12, .col-lg-4;
+  }
+}
+
+.yui-calendar div, .yui-calendar td, 
+.yui-calendar th, .yui-calendar thead, 
+.yui-calendar span {
+  font-family: $font-family-base !important;
+}
+
+.yui-calendar .calhead{
+    background-color: #ffffff !important;
+    color: initial !important;
+}
